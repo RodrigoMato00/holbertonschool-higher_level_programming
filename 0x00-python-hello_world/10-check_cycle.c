@@ -10,15 +10,16 @@ int check_cycle(listint_t *list)
 	listint_t *tortuga = list->next;
 	listint_t *liebre = list->next->next;
 
-	while (tortuga != NULL && liebre != NULL)
+	if (list == NULL || list->next == NULL)
+		return (0);
+
+	while (tortuga && liebre && liebre->next)
 	{
-		tortuga = tortuga->next;
-		if (tortuga == NULL)
-			return (0);
-		tortuga = tortuga->next;
-		liebre = liebre->next->next;
 		if (tortuga == liebre)
 			return (1);
+
+		tortuga = tortuga->next;
+		liebre = liebre->next->next;
 	}
 	return (0);
 }
