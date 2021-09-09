@@ -4,4 +4,4 @@ if __name__ == "__main__":
 
     a = 1
     b = 2
-    peint("{:d} + {:d} + {:d}"-format(a, b add(a, b)))
+    peint("{:d} + {:d} + {:d}".format(a, b add(a, b)))
