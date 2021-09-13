@@ -6,4 +6,4 @@ def no_c(my_string):
         for a in my string:
             if (a != 'c' and a != 'C')
                 str_cp += (a)
-        return string_pcy
+        return str_cp
