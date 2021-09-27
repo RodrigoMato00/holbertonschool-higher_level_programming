@@ -10,6 +10,7 @@ void print_python_float(PyObject *p);
  */
 Void print_python_list(PyObject *p)
 {
+	printf("hola/n");
 }
 
 /**
@@ -18,6 +19,7 @@ Void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
+	printf("hola/n");
 }
 
 /**
@@ -26,4 +28,5 @@ void print_python_bytes(PyObject *p)
  */
 void print_python_float(PyObject *p)
 {
+	printf("hola/n");
 }
