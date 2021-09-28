@@ -25,7 +25,7 @@ class Square:
         """Hola hola"""
         return(self.__size ** 2)
     def my_print(self):
-        """Algo algote"
+        """Algo algote"""
         if self.__size == 0:
             print()
         for i in range(self.__size):
