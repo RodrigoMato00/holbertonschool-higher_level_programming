@@ -47,5 +47,23 @@ class Square:
     def area(self):
         """Más y más y más"""
         return self.__size ** 2
+    @position.setter
+    def position(self, value):
+        """Algo alguien"""
+        errorCheckTuple(value)
+        self._position = value
+    def my_print(self):
+        """Algo algo algo"""
+        if self.__size == 0:
+            print()
+            return
+        for i in range(self._position[1]):
+            print()
+        for j in range(self.__size):
+            for k in range(self._position[0]):
+                print(" ", end="")
+            for l in range(self.__size):
+                print("#", end="")
+            print()
 
     
