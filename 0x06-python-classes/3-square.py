@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""Algo algo"""
+"""Algo algo
+"""
 
 
 class Square:
+    """Alguito algo
+    """
     def __init__(self, size=0):
     """Algo algo y más"
         if not isinstance(size, int):
