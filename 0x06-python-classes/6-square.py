@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+"""Algo algo algo
+"""
+
+
 class Square:
+    """Algo Alguito"""
     def __init__(self, size=0, position=(0, 0)):
+        """Algo algo algo"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -21,9 +27,11 @@ class Square:
             self.__position = position
     @property
     def position(self):
+        """Algo algo algo"""
         return self.__position
     @position.setter
     def position(self, value):
+        """Algo algo algo algo"""
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         elif len(value) is not 2:
@@ -37,5 +45,7 @@ class Square:
         else:
             self.__position = value
     def area(self):
+        """Más y más y más"""
         return self.__size ** 2
+
     
