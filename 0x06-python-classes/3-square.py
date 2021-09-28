@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Algo algo
+   Algo más 
 """
 
 
@@ -16,5 +17,5 @@ class Square:
         self.__size = size
 
     def area(self):
-    """Un poco algo más"""
+        """Un poco algo más"""
         return (self.__size * self.__size)
