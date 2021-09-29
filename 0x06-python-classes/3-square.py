@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Algo algo
-   Algo más 
+   Algo más
 """
 
 
