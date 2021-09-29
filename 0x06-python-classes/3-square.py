@@ -5,8 +5,7 @@
 
 
 class Square:
-    """Alguito algo
-    """
+    """Alguito algo"""
     def __init__(self, size=0):
         """Algo algo y más
         """
