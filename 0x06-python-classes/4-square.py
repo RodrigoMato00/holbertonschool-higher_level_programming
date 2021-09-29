@@ -9,12 +9,12 @@ class Square:
 
     def __init__(self, size=0):
         self.__size = size
-    
+
     @property
     def size(self):
         """Algo algo algo"""
         return(self.__size)
-    
+
     @size.setter
     def size(self, value):
         """Algo algo algo"""
