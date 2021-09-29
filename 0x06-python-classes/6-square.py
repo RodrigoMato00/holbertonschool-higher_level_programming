@@ -3,16 +3,18 @@
 """
 
 
-class Square:
-    """Algo Alguito"""
+class Square():
+    """Algo algo algo algo"""
+
     def __init__(self, size=0, position=(0, 0)):
-        """Algo algo algo"""
+        """Más y más más algo más"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
         if not isinstance(position, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         elif len(position) is not 2:
@@ -27,13 +29,28 @@ class Square:
             self.__position = position
 
     @property
+    def size(self):
+        """Algo Alguito algote"""
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """Algo y algo"""
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
+
+    @property
     def position(self):
-        """Algo algo algo"""
+        """Algo algo algo y más algo"
         return self.__position
 
     @position.setter
     def position(self, value):
-        """Algo algo algo algo"""
+        """Mucho algo y algo más"""
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         elif len(value) is not 2:
@@ -48,27 +65,23 @@ class Square:
             self.__position = value
 
     def area(self):
-        """Más y más y más"""
+        """Algo algo algo algo más"""
         return self.__size ** 2
 
-    @position.setter
-    def position(self, value):
-        """Algo alguien"""
-        errorCheckTuple(value)
-        self._position = value
-
     def my_print(self):
-        """Algo algo algo"""
+        """Palco algo algo"""
+
         if self.__size == 0:
             print()
             return
-        for i in range(self._position[1]):
-            print()
-        for j in range(self.__size):
-            for k in range(self._position[0]):
-                print(" ", end="")
-            for l in range(self.__size):
-                print("#", end="")
-            print()
 
-    
+        if self.__position[0] >= 0 and self.__position[1] >= 0:
+            for A in range(self.__position[1]):
+                print()
+
+        for F in range(self.__size):
+            for E in range(self.__position[0]):
+                print(' ', end='')
+            for C in range(self.__size):
+                print('#', end='')
+            print()
