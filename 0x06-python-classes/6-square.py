@@ -25,10 +25,12 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
+
     @property
     def position(self):
         """Algo algo algo"""
         return self.__position
+
     @position.setter
     def position(self, value):
         """Algo algo algo algo"""
@@ -44,14 +46,17 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+
     def area(self):
         """Más y más y más"""
         return self.__size ** 2
+
     @position.setter
     def position(self, value):
         """Algo alguien"""
         errorCheckTuple(value)
         self._position = value
+
     def my_print(self):
         """Algo algo algo"""
         if self.__size == 0:
