@@ -45,7 +45,7 @@ class Square():
 
     @property
     def position(self):
-        """Algo algo algo y más algo"
+        """Algo algo algo y más algo"""
         return self.__position
 
     @position.setter
