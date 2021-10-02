@@ -1,0 +1,48 @@
+==========================
+Test de suma de enteros
+==========================
+
+"""
+   Esto es un test para la funcion add_integer
+   primero importamos el modulo 0-add_integer,
+   de este modulo traemos la funcion add_integer
+"""
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+test 1:
+
+>>> add_integer(4232, -324)
+3908
+
+test 2:
+
+>>> add_integer(8.4, 5)
+13
+
+test 3:
+
+>>> add_integer(14, 4)
+18
+
+test 4:
+
+>>> add_integer(4, "Rodrigo")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+test 5:
+
+>>> add_integer("casa", 1234)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+test 6:
+
+>>> add_integer("", "")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+test 7:
+>>> add_integer(2*3, 4/2)
+8
