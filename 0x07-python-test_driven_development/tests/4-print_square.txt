@@ -59,6 +59,7 @@ TypeError: print_square() takes 1 positional argument but 2 were given
 test 8:
 
 >>> print_square(=)
+Traceback (most recent call last):
 SyntaxError: invalid syntax
 
 test 9
@@ -75,8 +76,8 @@ TypeError: size must be an integer
 
 test 11
 
->>> print_square(2147483647)
+#>>> print_square(2147483647)
 
 test 12
 
->>> print_square(2147483648)
+#>>> print_square(2147483648)
