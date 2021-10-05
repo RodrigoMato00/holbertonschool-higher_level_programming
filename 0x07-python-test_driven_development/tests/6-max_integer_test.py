@@ -26,10 +26,10 @@ class TestMaxInteger(unittest.TestCase):
         todos los int son iguales"""
         self.assertEqual(max_integer([6, 6, 6, 6, 6]), 6)
 
-#    def test_max(self):
+    def test_max(self):
         """ testea una lista
         donde hay numeros negativos"""
-#       self.assertEqual(max_integer([-1, -6, 10, -24, -758, 4, -3, 1]), 4)
+        self.assertEqual(max_integer([-1, -6, 10, -24, -758, 4, -3, 1]), 10)
 
     def test_max_none(self):
         """testea una
