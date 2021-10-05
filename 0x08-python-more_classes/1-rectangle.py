@@ -7,6 +7,7 @@
 class Rectangle:
     """A nuestra clase Rectangle
     le agregamos un largo y un ancho"""
+
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
