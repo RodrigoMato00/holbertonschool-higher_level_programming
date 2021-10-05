@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+B#!/usr/bin/python3
 """Modulo Rectangl
 """
 
@@ -35,10 +35,8 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-
 
     def __str__(self):
         t = ""
