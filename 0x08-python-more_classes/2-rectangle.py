@@ -2,6 +2,7 @@
 """Modulo Rectangl
 """
 
+
 class Rectangle:
     """A nuestra clase rectangulo
        que ya tiene un largop y ancho ahora le
