@@ -8,21 +8,8 @@ class Rectangle:
     objeto clase Rectangle
     """
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
-
-    @property
-    def height(self):
-        self.__height
-
-    @height.setter
-    def height(self, value):
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -32,28 +19,36 @@ class Rectangle:
     def width(self, value):
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
+        self.__width = value
+
+    @property
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
-        return self._width * self._height
+        return self.__width * self.__height
 
     def perimeter(self):
-        if (self._width == 0) or (self._height == 0):
-            self.perimeter = 0
+        if self.__width == 0 or self.__height == 0:
+            return 0
         else:
-            return (self._width + self._height) * 2
+            return (2*(self.__width + self.__height))
 
-    def _str_(self):
-        if (self._width == 0) or (self._height == 0):
-            return("")
-        else:
-            s = []
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    s.append("#")
-                s.append("\n")
-        del s[-1]
-        return("".join(s))
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ('')
+        a = ''
+        for i in range(self.__height):
+            a += str('#' * self.__width) + '\n'
+        a = a[:-1]
+        return a
