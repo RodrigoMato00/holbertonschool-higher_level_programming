@@ -1,0 +1,45 @@
+====================================
+Test lazy_matrix_mul
+====================================
+
+"""
+   Esto es un test para la funcion lazy_matrix_mul
+   primero importamos el modulo 101-lazy_matrix_mul,
+"""
+
+>>> a = __import__("101-lazy_matrix_mul")
+
+test 1
+
+>>> print(a.lazy_matrix_mul([[1, 2]], [[1, 1], [2, 1]]))
+[[5 3]]
+
+test 2:
+
+>>> a.lazy_matrix_mul([3, 2, 1], [2, 5])
+Traceback (most recent call last):
+ValueError: shapes (3,) and (2,) not aligned: 3 (dim 0) != 2 (dim 0)
+
+test 3:
+
+>>> a.lazy_matrix_mul([[5, 2, 1], ["Rodrigo", 3, 4]], [[5], [3]])
+Traceback (most recent call last):
+ValueError: shapes (2,3) and (2,1) not aligned: 3 (dim 1) != 2 (dim 0)
+
+test 4:
+
+>>> a.lazy_matrix_mul()
+Traceback (most recent call last):
+TypeError: lazy_matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+test 5:
+
+>>> a.lazy_matrix_mul([[2],[3]], [[2, 3], [3, 4]])
+Traceback (most recent call last):
+ValueError: shapes (2,1) and (2,2) not aligned: 1 (dim 1) != 2 (dim 0)
+
+test 6:
+
+>>> a.lazy_matrix_mul([[]], [[5],[3]])
+Traceback (most recent call last):
+ValueError: shapes (1,0) and (2,1) not aligned: 0 (dim 1) != 2 (dim 0)

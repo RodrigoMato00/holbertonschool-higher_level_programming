@@ -1,0 +1,38 @@
+====================================
+Test lazy_matrix_mul
+====================================
+
+"""
+   Esto es un test para la funcion lazy_matrix_mul
+   primero importamos el modulo 101-lazy_matrix_mul,
+"""
+
+>>> l_m = __import__("101-lazy_matrix_mul")
+
+test 1
+
+>>> print(l_m.lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+test 2:
+
+>>> l_m.lazy_matrix_mul([[5, 2, 6], [1, 2]], [66, 44])
+
+test 3:
+
+>>> l_m.lazy_matrix_mul()
+
+test 4:
+
+>>> l_m.lazy_matrix_mul([[7, 8]], [[]], [[3, 9]])
+
+test 5:
+
+>>>  l_m.lazy_matrix_mul([[7, 8]], [["Rodrigo", 10]], [[3, 9]])
+
+test 6:
+
+>>> l_m.lazy_matrix_mul([[4, 4], [[4, 4], [4, 4]])
+
+test 7:
+
+>>> l_m.lazy_matrix_mul([[1, 4.666], [[3, 5.77], [4, 2.5]])
+
