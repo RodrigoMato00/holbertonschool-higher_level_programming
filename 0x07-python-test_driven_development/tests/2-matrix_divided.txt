@@ -52,9 +52,11 @@ test 8:
 
 >>> matrix_divided([["5", 8], [6, 2]], 3)
 Traceback (most recent call last):
-TypeError
-test 8:
+TypeError: matrix mut be a matrix (list of lists) of integers/floats
+
+test 9:
 
 >>> matrix_divided([["5", 8], [6, 2]], "3")
 Traceback (most recent call last):
 TypeError: div must be a number
+
