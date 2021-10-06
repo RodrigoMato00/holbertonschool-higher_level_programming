@@ -4,15 +4,26 @@
 
 
 class Rectangle:
+    """A nuestra clase rectangulo
+       que ya tiene un largop y ancho ahora le
+       agregamos el valculo del Area y del perimetro"""
 
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
 
-        type(self).number_of_instances += 1
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -20,7 +31,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -32,50 +43,44 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
-        return (self.__width * self.__height)
+        return self.__width * self.__height
 
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
-            return (0)
-        return ((self.__width * 2) + (self.__height * 2))
-
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() >= rect_2.area():
-            return (rect_1)
-        return (rect_2)
-
-    @classmethod
-    def square(cls, size=0):
-        return (cls(size, size))
+            return 0
+        return 2 * self.__width + 2 * self.__height
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
-            return ("")
-
-        rect = []
-        for i in range(self.__height):
-            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+            return ""
+        my_str = (str(self.print_symbol) * self.__width + "\n") * self.__height
+        return my_str[:-1]
 
     def __repr__(self):
-        rect = "Rectangle(" + str(self.__width)
-        rect += ", " + str(self.__height) + ")"
-        return (rect)
+        return "Rectangle(" + str(self.__width) + ", " + str(self.__height)\
+                + ")"
 
     def __del__(self):
-        type(self).number_of_instances -= 1
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if type(rect_1) is not Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if type(rect_2) is not Rectangle:
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_2.area() > rect_1.area():
+            return rect_2
+        return rect_1
+
+    @classmethod
+    def square(cls, size=0):
+        return Rectangle(size, size)
