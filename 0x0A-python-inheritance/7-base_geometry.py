@@ -18,4 +18,4 @@ class BaseGeometry:
 
         if value <= 0:
 
-            raise TypeError(name + " must be greater than 0")
+            raise ValueError(name + " must be greater than 0")
