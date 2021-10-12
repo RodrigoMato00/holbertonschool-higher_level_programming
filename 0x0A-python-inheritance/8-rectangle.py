@@ -3,9 +3,10 @@
 Module __init__(self, width, height)
 """
 
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-class BaseGeometry:
     """class BaseGeometry"""
+
 
     class Rectangle(BaseGeometry):
         """class REctangle"""
