@@ -1,9 +1,11 @@
 0x1A. C - Hash tables
+
 *main.c
 *main.py
+*__pycache__*
 
 #executables
-a.out
+*a.out*
 a.exe
 a
 b
