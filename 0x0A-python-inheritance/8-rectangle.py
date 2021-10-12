@@ -5,7 +5,8 @@ Module __init__(self, width, height)
 
 
 class BaseGeometry:
-"""class BaseGeometry"""
+    """class BaseGeometry"""
+
 
 class Rectangle(BaseGeometry):
     """class REctangle"""
