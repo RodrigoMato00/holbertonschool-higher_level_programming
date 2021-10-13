@@ -29,4 +29,5 @@ class MyClass:
     def __str__(self):
         """str
         """
-        return "[MyClass] {} - {} => {}".format(self.__name, self.number, self.score)
+        return
+        "[MyClass] {} - {} => {}".format(self.__name, self.number, self.score)
