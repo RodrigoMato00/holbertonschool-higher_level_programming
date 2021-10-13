@@ -50,3 +50,21 @@ test 5:
 
 >>> my_list = MyList()
 >>> my_list.append(None)
+
+test 6:
+
+>>> m = __import__("1-my_list").__doc__
+>>> len(m) > 1
+True
+
+test 7:
+
+>>> l = MyList()
+>>> l.print_sorted()
+[]
+
+test 8:
+
+>>> l.print_sorted(1)
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
