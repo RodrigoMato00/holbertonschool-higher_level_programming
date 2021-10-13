@@ -8,18 +8,6 @@ test
 
 >>> MyList = __import__('1-my_list').MyList
 
->>> module_doc = _import('1-my_list').doc_
->>> print(len(module_doc) > 0)
-True
-
->>> class_doc = _import('1-my_list').MyList.doc_
->>> print(len(class_doc) > 0)
-True
-
->>> function_doc = _import('1-my_list').MyList.print_sorted.doc_
->>> print(len(function_doc) > 0)
-True
-
 test 1:
 
 >>> my_list = MyList()
