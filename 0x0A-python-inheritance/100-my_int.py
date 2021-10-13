@@ -3,9 +3,10 @@
 Module: class MyInt(int)
 """
 
+
 class MyInt(int):
     """my int
-    """    
+    """
     def __eq__(self, other):
 
         return self - other != 0

@@ -5,6 +5,7 @@ Module: area(self):
 
 
 class BaseGeometry:
+    """class BaseGeometry"""
     def area(self):
         """
         contain a function area
