@@ -45,3 +45,8 @@ test 4:
 >>> my_list.append(2)
 >>> print(my_list)
 [1, 8, 9, 2]
+
+test 5:
+
+>>> my_list = MyList()
+>>> my_list.append(None)
