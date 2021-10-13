@@ -5,6 +5,8 @@ Module: area(self) integer_validator(self, name, value)
 
 
 class BaseGeometry:
+    """ Class BaseGeometry
+    """
     def area(self):
         """ area"""
 
