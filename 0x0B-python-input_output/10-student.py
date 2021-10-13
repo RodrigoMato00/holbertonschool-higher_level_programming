@@ -19,7 +19,7 @@ class Student:
     def to_json(self, attrs=None):
         """ to json
         """
-        
+
         if type(attrs) is list:
             c = {}
 
