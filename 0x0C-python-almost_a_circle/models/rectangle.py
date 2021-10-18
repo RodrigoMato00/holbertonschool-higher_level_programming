@@ -142,3 +142,15 @@ class Rectangle(Base):
                         self.x = kwargs['x']
                     if i == 'y':
                         self.y = kwargs['y']
+
+    def to_dictionary(self):
+        """
+        """
+
+        dictionary = {}
+        dictionary['id'] = self.id
+        dictionary['width'] = self.width
+        dictionary['height'] = self.height
+        dictionary['x'] = self.x
+        dictionary['y'] = self.y
+        return dictionary
