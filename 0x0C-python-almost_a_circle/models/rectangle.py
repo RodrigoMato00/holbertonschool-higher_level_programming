@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """
-kkkcjfiflxl
+=======================================================
+Creation if the class Rectabgle that inherits from Base
+=======================================================
 """
 
-from models.base import Base
-"""flclvjudkckf
-"""
+from .base import Base
 
 
 class Rectangle(Base):
+    """jidjijdoje
+    """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """xkvfudixkcjfid
