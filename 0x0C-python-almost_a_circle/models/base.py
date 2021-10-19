@@ -3,9 +3,9 @@
 ldkajfsd
 """
 
-Import json
+import json
 
-Import os
+import os
 
 
 class Base:
