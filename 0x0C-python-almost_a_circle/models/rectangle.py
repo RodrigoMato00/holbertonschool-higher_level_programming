@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 """
-
+::::
 """
 
 from models.base import Base
-"""
+""":::::
 """
 
 
 class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
+        """:::::
         """
 
         self.width = width
@@ -23,13 +23,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """
+        """::::
         """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """
+        """::::
         """
         self.__width = width
 
@@ -40,13 +40,13 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """
+        """::::
         """
         return self.__height
 
     @height.setter
     def height(self, height):
-        """
+        """::::
         """
         self.__height = height
 
@@ -57,13 +57,13 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """
+        """::::
         """
         return self.__x
 
     @x.setter
     def x(self, x):
-        """
+        """::::
         """
         self.__x = x
         if type(x) is not int:
@@ -73,13 +73,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """
+        """::::
         """
         return self.__y
 
     @y.setter
     def y(self, y):
-        """
+        """::::
         """
         self.__y = y
         if type(y) is not int:
@@ -88,12 +88,12 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
-        """
+        """::::
         """
         return self.width * self.height
 
     def display(self):
-        """
+        """::::
         """
         for i in range(self.__y):
             print()
@@ -105,7 +105,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """
+        """::::
         """
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height))
 
@@ -144,7 +144,7 @@ class Rectangle(Base):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
-        """
+        """::::
         """
 
         dictionary = {}
