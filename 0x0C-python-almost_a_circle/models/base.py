@@ -7,11 +7,11 @@ import json
 
 import os
 
+
 class Base:
     """:
     """
     __n_objects = 0
-
 
     def __init__(self, id=None):
         """:
