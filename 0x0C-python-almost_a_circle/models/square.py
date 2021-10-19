@@ -1,40 +1,40 @@
 #!/usr/bin/python3
 """
-::::::::
+jfjdidcjdfido
 """
 
 from models.rectangle import Rectangle
-"""::::
+"""domcnidd
 """
 
 
 class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
-        """::::
+        """kckdkxmcjfid
         """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """::::
+        """ododmcnfuriod
         """
         return("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,  self.width))
 
     @property
     def size(self):
-        """::::
+        """kdxkcjfiod
         """
         return self.width
 
     @size.setter
     def size(self, value):
-        """::::
+        """kifkcmncnfidod
         """
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
-        """::::
+        """mcndjdixkcjfif
         """
 
         if len(args) > 0:
@@ -70,7 +70,7 @@ class Square(Rectangle):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
-        """::::
+        """ncndifikdodie
         """
 
         dictionary = {}

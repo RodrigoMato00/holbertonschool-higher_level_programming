@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 """
-::::
+kkkcjfiflxl
 """
 
 from models.base import Base
-""":::::
+"""flclvjudkckf
 """
 
 
 class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """:::::
+        """xkvfudixkcjfid
         """
 
         self.width = width
@@ -22,13 +22,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """::::
+        """kdkxjucyvukxnd
         """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """::::
+        """kfkcmvbdtyid
         """
         self.__width = width
 
@@ -39,13 +39,13 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """::::
+        """ldkcmdfsydif
         """
         return self.__height
 
     @height.setter
     def height(self, height):
-        """::::
+        """lfidxmdvstdufk
         """
         self.__height = height
 
@@ -56,13 +56,13 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """::::
+        """lxlxodfsvcxbchud
         """
         return self.__x
 
     @x.setter
     def x(self, x):
-        """::::
+        """fkjcnndfrirodkc
         """
         self.__x = x
         if type(x) is not int:
@@ -72,13 +72,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """::::
+        """dkdkcmdndufid
         """
         return self.__y
 
     @y.setter
     def y(self, y):
-        """::::
+        """odlcldofodpoc
         """
         self.__y = y
         if type(y) is not int:
@@ -87,12 +87,12 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
-        """::::
+        """kdccmfkrodlf
         """
         return self.width * self.height
 
     def display(self):
-        """::::
+        """oflcmfdkifogod
         """
         for i in range(self.__y):
             print()
@@ -104,7 +104,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """::::
+        """lfldndbvdtfu
         """
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height))
 
@@ -143,7 +143,7 @@ class Rectangle(Base):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
-        """::::
+        """iddmcfidxkcfif
         """
 
         dictionary = {}

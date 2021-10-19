@@ -1,20 +1,20 @@
 #!/usr/bin/python3
 """
-::::
+ldkajfsd
 """
 
-import json
+Import Jsondf
 
-import os
+Import os
 
 
 class Base:
-    """:
+    """dkrdkdkrtjfhdud
     """
     __n_objects = 0
 
     def __init__(self, id=None):
-        """:
+        """kdkdridkfd
         """
 
         if id is not None:
@@ -26,7 +26,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """:
+        """kdkfdufudjdjrk
         """
 
         if list_dictionaries is None or len(list_dictionaries) == 0:
@@ -35,7 +35,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """:
+        """jdjfufidkcjfif
         """
 
         list_objects = []
@@ -52,7 +52,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """:
+        """jdkxjfufidkc
         """
 
         if json_string is None or json_string is "":
@@ -61,7 +61,7 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """:
+        """kdkckjfidoclcld
         """
 
         from models.rectangle import Rectangle
@@ -76,7 +76,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """:
+        """kskxkfiixkckjf
         """
         i_l = []
         fn = "{}.json".format(cls.__name__)
