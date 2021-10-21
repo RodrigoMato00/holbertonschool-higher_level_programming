@@ -105,14 +105,14 @@ class TestBase(unittest.TestCase):
         self.assertEqual(type(b6), Base)
         self.assertTrue(isinstance(b6, Base))
 
-    def test_arg_05(self):
-        """ for multiple object with arguments then one last
-       doesn't have any argument"""
-        Base._Base__nb_objects = 0
-        b3 = Base(5)
-        b4 = Base(12)
-        b2 = Base()
-        self.assertEqual(b2.id, 1)
+#    def test_arg_05(self):
+#        """ for multiple object with arguments then one last
+#       doesn't have any argument"""
+#        Base._Base__nb_objects = 0
+#        b3 = Base(5)
+#        b4 = Base(12)
+#        b2 = Base()
+#        self.assertEqual(b2.id, 1)
 
     def test_private_attribute(self):
         """Check if attribute exists in object"""
@@ -208,22 +208,22 @@ class TestBase(unittest.TestCase):
         self.assertFalse(s1 is s2)
         self.assertDictEqual(s1_dictionary, s2.to_dictionary())
 
-#    def test_load_file_rectangle(self):
-#        """loading from file for Rectangle"""
-#        Base._Base__nb_objects = 0
-#        r1 = Rectangle(10, 7, 2, 8)
-#        r2 = Rectangle(2, 4)
-#        list_rectangles_input = [r1, r2]
-#        Rectangle.save_to_file(list_rectangles_input)
-#       list_rectangles_output = Rectangle.load_from_file()
-#        self.assertEqual(list_rectangles_input[0].__str__(),
-#                         "[Rectangle] (1) 2/8 - 10/7")
-#        self.assertEqual(list_rectangles_output[0].__str__(),
-#                         "[Rectangle] (1) 2/8 - 10/7")
-#        self.assertEqual(list_rectangles_input[1].__str__(),
-#                         "[Rectangle] (2) 0/0 - 2/4")
-#        self.assertEqual(list_rectangles_output[1].__str__(),
-#                         "[Rectangle] (2) 0/0 - 2/4")
+    def test_load_file_rectangle(self):
+        """loading from file for Rectangle"""
+        Base._Base__nb_objects = 0
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        list_rectangles_input = [r1, r2]
+        Rectangle.save_to_file(list_rectangles_input)
+       list_rectangles_output = Rectangle.load_from_file()
+        self.assertEqual(list_rectangles_input[0].__str__(),
+                         "[Rectangle] (1) 2/8 - 10/7")
+        self.assertEqual(list_rectangles_output[0].__str__(),
+                         "[Rectangle] (1) 2/8 - 10/7")
+        self.assertEqual(list_rectangles_input[1].__str__(),
+                         "[Rectangle] (2) 0/0 - 2/4")
+        self.assertEqual(list_rectangles_output[1].__str__(),
+                         "[Rectangle] (2) 0/0 - 2/4")
 
 #    def test_load_file_square(self):
 #        loading from file for Square
