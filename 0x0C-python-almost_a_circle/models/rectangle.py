@@ -20,7 +20,7 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
-    @property
+    """@property
     def width(self):
         """kdkxjucyvukxnd
         """
@@ -153,4 +153,4 @@ class Rectangle(Base):
         dictionary['height'] = self.height
         dictionary['x'] = self.x
         dictionary['y'] = self.y
-        return dictionary
+        return dictionary"""
