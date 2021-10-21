@@ -105,14 +105,14 @@ class TestBase(unittest.TestCase):
         self.assertEqual(type(b6), Base)
         self.assertTrue(isinstance(b6, Base))
 
-#    def test_arg_05(self):
-#        """ for multiple object with arguments then one last
-#       doesn't have any argument"""
-#        Base._Base__nb_objects = 0
-#        b3 = Base(5)
-#        b4 = Base(12)
-#        b2 = Base()
-#        self.assertEqual(b2.id, 1)
+    def test_arg_05(self):
+        """ for multiple object with arguments then one last
+       doesn't have any argument"""
+        Base._Base__nb_objects = 0
+        b3 = Base(5)
+        b4 = Base(12)
+        b2 = Base()
+        self.assertEqual(b2.id, 1)
 
     def test_private_attribute(self):
         """Check if attribute exists in object"""
