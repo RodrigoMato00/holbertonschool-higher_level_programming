@@ -11,9 +11,9 @@ from_json_string = Base.from_json_string
 create = Base.create
 load_from_file = Base.load_from_file
  """
+
+
 class TestBase(unittest.TestCase):
-
-
 
     def test_documentation(self):
         """documentation"""
@@ -81,7 +81,7 @@ class TestBase(unittest.TestCase):
         b3 = Base()
         b4 = Base(12)
         b5 = Base()
-       self.assertEqual(b5.id, 3)
+        self.assertEqual(b5.id, 3)
 
     def test_arg_04(self):
         """multiple objects without argument
@@ -226,7 +226,7 @@ class TestBase(unittest.TestCase):
 #                         "[Rectangle] (2) 0/0 - 2/4")
 
 #    def test_load_file_square(self):
-#        loading from file for Square
+#        """loading from file for Square"""
 #        s1 = Square(5)
 #        s2 = Square(7, 9, 1)
 #        list_squares_input = [s1, s2]
