@@ -3,16 +3,14 @@
 hddjdjeickd
 """
 
-from .base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
-    """jidjijdoje
-    """
+    """ class Rectangle from Base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """xkvfudixkcjfid
-        """
+        """ init Rectangle class """
 
         self.width = width
         self.height = height
@@ -22,14 +20,14 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """kdkxjucyvukxnd
-        """
+        """Rodrigo"""
+
         return self.__width
 
     @width.setter
     def width(self, width):
-        """kfkcmvbdtyid
-        """
+        """Rodrigo"""
+
         self.__width = width
 
         if type(width) is not int:
@@ -39,14 +37,14 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """ldkcmdfsydif
-        """
+        """Rodrigo"""
+
         return self.__height
 
     @height.setter
     def height(self, height):
-        """lfidxmdvstdufk
-        """
+        """Rodrigo"""
+
         self.__height = height
 
         if type(height) is not int:
@@ -56,14 +54,14 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """lxlxodfsvcxbchud
-        """
+        """Rodrigo"""
+
         return self.__x
 
     @x.setter
     def x(self, x):
-        """fkjcnndfrirodkc
-        """
+        """Rodrigo"""
+
         self.__x = x
         if type(x) is not int:
             raise TypeError("x must be an integer")
@@ -72,14 +70,14 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """dkdkcmdndufid
-        """
+        """Rodrigo"""
+
         return self.__y
 
     @y.setter
     def y(self, y):
-        """odlcldofodpoc
-        """
+        """Rodrigo"""
+
         self.__y = y
         if type(y) is not int:
             raise TypeError("y must be an integer")
@@ -87,13 +85,13 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
-        """kdccmfkrodlf
-        """
+        """Rodrigo"""
+
         return self.width * self.height
 
     def display(self):
-        """oflcmfdkifogod
-        """
+        """Rodrigo"""
+
         for i in range(self.__y):
             print()
         for i in range(self.__height):
@@ -104,12 +102,13 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """lfldndbvdtfu
-        """
+        """Rodrigo"""
+
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                 self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+        """Rodrigo"""
 
         if len(args) > 0:
 
@@ -144,8 +143,7 @@ class Rectangle(Base):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
-        """iddmcfidxkcfif
-        """
+        """Rodrigo"""
 
         dictionary = {}
         dictionary['id'] = self.id
