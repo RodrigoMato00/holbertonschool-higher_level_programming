@@ -22,11 +22,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """Rodrigo"""
 
         return self.__width
 
     @width.setter
     def width(self, width):
+        """Rodrigo"""
 
         self.__width = width
 
@@ -37,11 +39,13 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """Rodrigo"""
 
         return self.__height
 
     @height.setter
     def height(self, height):
+        """Rodrigo"""
 
         self.__height = height
 
@@ -52,11 +56,13 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """Rodrigo"""
 
         return self.__x
 
     @x.setter
     def x(self, x):
+        """Rodrigo"""
 
         self.__x = x
         if type(x) is not int:
@@ -66,11 +72,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """Rodrigo"""
 
         return self.__y
 
     @y.setter
     def y(self, y):
+        """Rodrigo"""
 
         self.__y = y
         if type(y) is not int:
@@ -79,10 +87,12 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
+        """Rodrigo"""
 
         return self.width * self.height
 
     def display(self):
+        """Rodrigo"""
 
         for i in range(self.__y):
             print()
@@ -94,11 +104,13 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """Rodrigo"""
 
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                 self.__y, self.__width, self.__height))
 
     def update(self, *args, **kwargs):
+        """Rodrigo"""
 
         if len(args) > 0:
 
@@ -133,6 +145,7 @@ class Rectangle(Base):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
+        """Rodrigo"""
 
         dictionary = {}
         dictionary['id'] = self.id
