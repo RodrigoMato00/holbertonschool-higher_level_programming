@@ -22,14 +22,14 @@ class Rectangle(Base):
 
     """@property
     def width(self):
-        """kdkxjucyvukxnd
-        """
+#        """kdkxjucyvukxnd
+#        """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """kfkcmvbdtyid
-        """
+#        """kfkcmvbdtyid
+#        """
         self.__width = width
 
         if type(width) is not int:
@@ -39,14 +39,14 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """ldkcmdfsydif
-        """
+#        """ldkcmdfsydif
+#        """
         return self.__height
 
     @height.setter
     def height(self, height):
-        """lfidxmdvstdufk
-        """
+#        """lfidxmdvstdufk
+#        """
         self.__height = height
 
         if type(height) is not int:
@@ -56,14 +56,14 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """lxlxodfsvcxbchud
-        """
+#        """lxlxodfsvcxbchud
+#        """
         return self.__x
 
     @x.setter
     def x(self, x):
-        """fkjcnndfrirodkc
-        """
+#        """fkjcnndfrirodkc
+#        """
         self.__x = x
         if type(x) is not int:
             raise TypeError("x must be an integer")
@@ -72,14 +72,14 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """dkdkcmdndufid
-        """
+#        """dkdkcmdndufid
+#        """
         return self.__y
 
     @y.setter
     def y(self, y):
-        """odlcldofodpoc
-        """
+#        """odlcldofodpoc
+#        """
         self.__y = y
         if type(y) is not int:
             raise TypeError("y must be an integer")
@@ -87,13 +87,13 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
-        """kdccmfkrodlf
-        """
+#        """kdccmfkrodlf
+#        """
         return self.width * self.height
 
     def display(self):
-        """oflcmfdkifogod
-        """
+#        """oflcmfdkifogod
+#        """
         for i in range(self.__y):
             print()
         for i in range(self.__height):
@@ -104,8 +104,8 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """lfldndbvdtfu
-        """
+#        """lfldndbvdtfu
+#        """
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                 self.__y, self.__width, self.__height))
 
