@@ -78,7 +78,7 @@ class Rectangle(Base):
         elif y < 0:
             raise ValueError("y must be > 0")
 
-    """def area(self):
+    def area(self):
 
         return self.width * self.height
 
@@ -140,4 +140,4 @@ class Rectangle(Base):
         dictionary['height'] = self.height
         dictionary['x'] = self.x
         dictionary['y'] = self.y
-        return dictionary"""
+        return dictionary
