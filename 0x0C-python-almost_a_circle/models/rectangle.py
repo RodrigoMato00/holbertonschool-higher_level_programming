@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-=======================================================
-Creation if the class Rectabgle that inherits from Base
-=======================================================
+hddjdjeickd
 """
 
 from .base import Base

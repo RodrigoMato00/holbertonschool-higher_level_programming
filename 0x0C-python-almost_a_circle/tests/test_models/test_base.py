@@ -60,8 +60,6 @@ class TestBase(unittest.TestCase):
     def test_arg_02(self):
         """with one object created but with argument"""
         Base._Base__nb_objects = 0
-#        b0 = Base()
-#        self.assertEqual(b0.id, 1)
         b1 = Base()
         self.assertEqual(b1.id, 2)
         b2 = Base(12)
@@ -75,15 +73,15 @@ class TestBase(unittest.TestCase):
         b6 = Base(9)
         self.assertEqual(b6.id, 9)
 
-#    def test_arg_03(self):
-#        """multiple objects without argument
-#        and one with one argument"""
-#        Base._Base__nb_objects = 0
-#        b1 = Base()
-#        b3 = Base()
-#        b4 = Base(12)
-#      b5 = Base()
-#       self.assertEqual(b5.id, 3)
+    def test_arg_03(self):
+        """multiple objects without argument
+        and one with one argument"""
+        Base._Base__nb_objects = 0
+        b1 = Base()
+        b3 = Base()
+        b4 = Base(12)
+        b5 = Base()
+       self.assertEqual(b5.id, 3)
 
     def test_arg_04(self):
         """multiple objects without argument
