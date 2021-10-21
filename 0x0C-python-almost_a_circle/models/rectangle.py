@@ -4,15 +4,15 @@
 Creation if the class Rectabgle that inherits from Base
 =======================================================
 """
-from .base import Base
+
+from models.base import Base
 
 
 class Rectangle(Base):
-    """jidjijdoje
-    """
+    """ class Rectangle from Base """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """xkvfudixkcjfid
+        """ init Rectangle class """
         """
 
         self.width = width
