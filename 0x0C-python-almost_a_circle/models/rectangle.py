@@ -4,7 +4,6 @@
 Creation if the class Rectabgle that inherits from Base
 =======================================================
 """
-
 from .base import Base
 
 
