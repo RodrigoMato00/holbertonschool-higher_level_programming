@@ -22,14 +22,12 @@ class Rectangle(Base):
 
     """@property
     def width(self):
-#        """kdkxjucyvukxnd
-#        """
+
         return self.__width
 
     @width.setter
     def width(self, width):
-#        """kfkcmvbdtyid
-#        """
+
         self.__width = width
 
         if type(width) is not int:
@@ -39,14 +37,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
-#        """ldkcmdfsydif
-#        """
+
         return self.__height
 
     @height.setter
     def height(self, height):
-#        """lfidxmdvstdufk
-#        """
+
         self.__height = height
 
         if type(height) is not int:
@@ -56,14 +52,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-#        """lxlxodfsvcxbchud
-#        """
+
         return self.__x
 
     @x.setter
     def x(self, x):
-#        """fkjcnndfrirodkc
-#        """
+
         self.__x = x
         if type(x) is not int:
             raise TypeError("x must be an integer")
@@ -72,14 +66,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-#        """dkdkcmdndufid
-#        """
+
         return self.__y
 
     @y.setter
     def y(self, y):
-#        """odlcldofodpoc
-#        """
+
         self.__y = y
         if type(y) is not int:
             raise TypeError("y must be an integer")
@@ -87,13 +79,11 @@ class Rectangle(Base):
             raise ValueError("y must be > 0")
 
     def area(self):
-#        """kdccmfkrodlf
-#        """
+
         return self.width * self.height
 
     def display(self):
-#        """oflcmfdkifogod
-#        """
+
         for i in range(self.__y):
             print()
         for i in range(self.__height):
@@ -104,8 +94,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-#        """lfldndbvdtfu
-#        """
+
         return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
                 self.__y, self.__width, self.__height))
 
@@ -144,8 +133,6 @@ class Rectangle(Base):
                         self.y = kwargs['y']
 
     def to_dictionary(self):
-        """iddmcfidxkcfif
-        """
 
         dictionary = {}
         dictionary['id'] = self.id
