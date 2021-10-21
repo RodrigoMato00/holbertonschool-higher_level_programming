@@ -90,7 +90,6 @@ class Base:
         else:
             return []
 
-
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """ save to file csv"""
