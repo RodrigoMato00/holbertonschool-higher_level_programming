@@ -1,7 +1,7 @@
 #!/usr/bin/node
 if (process.argv[2] == null)
 {
-	console.log('no argument');
+	console.log('No argument');
 }
 else if (process.argv.length === 3)
 {
@@ -9,6 +9,6 @@ else if (process.argv.length === 3)
 }
 else
 {
-	console.log('Argument found');
+	console.log('Arguments found');
 
 }
