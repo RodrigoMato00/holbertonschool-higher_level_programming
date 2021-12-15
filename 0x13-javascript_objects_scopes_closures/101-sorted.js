@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const ImpDict = require('./101-data.js').ImpDict;
-let MyDict = {};
-for (const value in ImpDict) {
-  if (MyDict[ImpDict[value]] === undefined) {
-    MyDict[ImpDict[value]] = [value];
+const dict = require('./101-data.js').dict;
+const MyDict = {};
+for (const key in dict) {
+  if (MyDict[dict[key]] === undefined) {
+    MyDict[dict[key]] = [key];
   } else {
-    MyDict[ImpDict[value]].push(value);
+    MyDict[dict[key]].push(key);
   }
 }
 console.log(MyDict);
