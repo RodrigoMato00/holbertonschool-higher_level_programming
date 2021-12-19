@@ -17,8 +17,7 @@ if __name__ == "__main__":
                                    db=sys.argv[3])
     cur = data_connect.cursor()
     cur.execute("SELECT * FROM states ORDER BY states.id;")
-    cur = cur.fetchall()
-    for row in cur:
+    for row in cur.fetchall():
         print(row)
     cur.close()
     data_connect.close()
