@@ -3,19 +3,19 @@
 lists all states from the database hbtn_0e_0_usa
 """
 import MySQLdb
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
     """
     connect to the database and select list of states in database
     """
-    conection = MySQLdb.connect(host="localhost", port=3306,
-                               password=argv[2], user=argv[1],
-                               db = argv[3])
-    cur = conection.cursor()
-    cur.execute("SELECT * FROM states ORDER BY states.id")
-    for states in cur.fetchall():
-        print(states)
+    data_connect = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
+                         passwd=sys.argv[2], db=sys.argv[3])
+    cur = data_connect.cursor()
+    cur.execute("SELECT * FROM states ORDER BY states.id;")
+    cur = cur.fetchall()
+    for row in cur:
+        print(row)
     cur.close()
-    conection.close()
+    data_connect.close()
