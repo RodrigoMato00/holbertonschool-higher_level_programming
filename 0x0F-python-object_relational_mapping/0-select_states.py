@@ -7,7 +7,9 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """connect to the database and select list of states in database"""
+    """
+    connect to the database and select list of states in database
+    """
     database = MySQLdb.connect(host="localhost", port=3306,
                                user=argv[1], passwd=argv[2], database=argv[3])
     cursor = database.cursor()
