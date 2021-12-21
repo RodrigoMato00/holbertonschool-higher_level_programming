@@ -3,12 +3,11 @@
 lists all states from the database hbtn_0e_0_usa
 """
 
+import MySQLdb
+import sys
+
+
 if __name__ == "__main__":
-    """
-    connect to the database and select list of states in database
-    """
-    import MySQLdb
-    import sys
 
     db = MySQLdb.connect(host="localhost",
                          port=3306,
@@ -16,10 +15,10 @@ if __name__ == "__main__":
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id ASC",
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id;",
                 (sys.argv[4], ))
-    for row in cur.fetchall():
+    rcurr = cur.fetchall()
+    for row in curr:
         print(row)
     cur.close()
-    data_connect.close()
-    
+    db.close()
