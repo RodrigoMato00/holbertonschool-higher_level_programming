@@ -21,6 +21,6 @@ if __name__ == "__main__":
     lis = []
     for row in curr:
         lis.append(row[0])
-    print(", ".join(li))
+    print(", ".join(lis))
     cur.close()
     db.close()
