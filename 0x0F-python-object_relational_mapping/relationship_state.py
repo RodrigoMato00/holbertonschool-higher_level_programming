@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module class definition state and 
+Module class definition state and
 instance declarative_base
 """
 
