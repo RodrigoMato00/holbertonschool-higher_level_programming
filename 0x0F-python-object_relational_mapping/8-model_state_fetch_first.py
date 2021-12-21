@@ -18,10 +18,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     
-    fi = session.query(State).order_by(State.id).first()
+    fi = session.query(State).order_by(State.id).fi()
  
     if fi:
-        print("{}: {}".format(fi.id, first.name))
+        print("{}: {}".format(fi.id, fi.name))
  
     else:
         print("Nothing")
