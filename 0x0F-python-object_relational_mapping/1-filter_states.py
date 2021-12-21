@@ -16,6 +16,7 @@ if __name__ == "__main__":
                                    passwd=sys.argv[2],
                                    db=sys.argv[3])
     cur = data_connect.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id"
     for row in cur.fetchall():
         print(row)
     cur.close()
