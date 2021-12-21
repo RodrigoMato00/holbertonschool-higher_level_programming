@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-changes the name of a State object 
+changes the name of a State object
 from  the database hbtn_0e_6_usa
 """
 
