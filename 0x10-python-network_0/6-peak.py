@@ -19,8 +19,8 @@ def find_peak(list_of_integers):
                                              list_of_integers[half - 1]):
         return list_of_integers[half]
 
-    if half != length - 1 and list_of_integers[half + 1]\
-    > list_of_integers[half]:
+    if half != length - 1 and list_of_integers[half + 1] \
+       > list_of_integers[half]:
         return find_peak(list_of_integers[half + 1:])
 
     return find_peak(list_of_integers[:half])
