@@ -3,13 +3,13 @@
 Python script that fetches https://intranet.hbtn.io/status
 """
 
-from urllib import request
+import urllib.request as request
 
 
 if __name__ == "__main__":
     with request.urlopen('https://intranet.hbtn.io/status') as r:
-        rr = r.read()
-        print("Body response:")
-        print("    - type: {}".format(type(rr)))
-        print("    - content: {}".format(rr))
-        print("    - utf8 content: {}".format(rr.decode("utf-8")))
+        r_r = r.read()
+        print('Body response:')
+        print("\t- type: {}".format(type(r_r)))
+        print("\t- content: {}".format(r_r))
+        print("\t- utf8 content: {}".format(r_r.decode('utf-8')))
