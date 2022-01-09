@@ -3,7 +3,7 @@
 Python script that fetches https://intranet.hbtn.io/status
 """
 
-import urllib.request as request
+import urllib as request
 
 if __name__ == "__main__":
     with request.urlopen('https://intranet.hbtn.io/status') as r:
