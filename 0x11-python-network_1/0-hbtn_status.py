@@ -3,11 +3,11 @@
 Python script that fetches https://intranet.hbtn.io/status
 """
 
-import urllib.request as request
+from urllib.request import urlopen
 
 
 if __name__ == "__main__":
-    with request.urlopen('https://intranet.hbtn.io/status') as r:
+    with urlopen('https://intranet.hbtn.io/status') as r:
         r_r = r.read()
         print('Body response:')
         print("\t- type: {}".format(type(r_r)))
