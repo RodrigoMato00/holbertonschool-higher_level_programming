@@ -16,7 +16,7 @@ req(process.argv[2], function (error, response, body) {
 
   else {
     fs.writeFile(process.argv[3], body, 'utf-8', function (error) {
-       if (error) console.log(error);
+      if (error) console.log(error);
     });
   }
 });
