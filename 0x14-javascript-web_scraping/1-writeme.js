@@ -10,6 +10,6 @@ Write a script that writes a string to a file.
 const name = process.argv[2];
 const content = process.argv[3];
 const fs = require('fs');
-fs.writeFile(name, content, 'utf-8', function(error) {
-    if (error) console.log(error);
+fs.writeFile(name, content, 'utf-8', function (error) {
+  if (error) console.log(error);
 });
