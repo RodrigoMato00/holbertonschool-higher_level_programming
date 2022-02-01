@@ -8,8 +8,11 @@ Write a script that prints all characters of a Star Wars movie:
 -You must use the module request
 */
 const name = process.argv[2];
+
 const content = process.argv[3];
+
 const fs = require('fs');
+
 fs.writeFile(name, content, 'utf-8', function (error) {
   if (error) console.log(error);
 });
