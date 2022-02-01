@@ -9,9 +9,9 @@ Write a script that prints the title of a Star Wars movie where the episode numb
 */
 
 const req = require('request');
-const api_url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
+const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
 
-req(api_url, function (error, response, body) {
+req(url, function (error, response, body) {
   if (error) console.log(error);
 
   else if (response.statusCode === 200) {
