@@ -1,28 +1,28 @@
 #!/usr/bin/node
-
 /*
 Write a script that computes the number of tasks completed by user id.
 -The first argument is the API URL: https://jsonplaceholder.typicode.com/todos
 -Only print users with completed task
 -You must use the module request
 */
-
 const req = require('request');
+const url = process.argv[2];
 
-req(process.argv[2], function (error, response, body) {
+req(url, function (error, response, body) {
   if (error) console.log(error);
 
-  else {
-    const todos = JSON.parse(body);
-    const print = {};
+  else if (response.statusCode === 200) {
+    const completed = {};
 
-    for (const t of todos) {
-      if (t.completed) {
-        if (!print[t.userId]) print[t.userId] = 1;
-
-        else print[t.userId]++;
+    JSON.parse(body).forEach(task => {
+      if (task.completed === true) {
+        if (completed[task.userId] === undefined) {
+          completed[task.userId] = 1;
+        } else {
+          completed[task.userId]++;
+        }
       }
-    }
-    console.log(print);
+    });
+    console.log(completed);
   }
 });
